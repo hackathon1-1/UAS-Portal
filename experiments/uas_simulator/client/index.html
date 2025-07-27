@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sUAS Part Picker | Build and track compatibility and capabilities between parts</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Qore Design System Assets -->
+    <link rel="stylesheet" href="/asset/fonts/fonts.css" />
+    <link rel="stylesheet" href="/asset/icon/style.css" />
+    <link rel="stylesheet" href="/asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/asset/css/animate.css" />
+    <link rel="stylesheet" href="/asset/css/odometer.min.css" />
+    <link rel="stylesheet" type="text/css" href="/asset/css/styles.css" />
+    
+    <style>
+      /* Ensure dark theme is applied */
+      html, body {
+        background-color: var(--main) !important;
+        color: var(--text-main) !important;
+      }
+      
+      /* Additional UAS Builder specific styles */
+      #root {
+        margin: 0;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background-color: var(--main);
+      }
+      
+      /* Custom scrollbar for UAS Builder */
+      .uas-builder-scroll::-webkit-scrollbar {
+        width: 4px;
+      }
+      
+      .uas-builder-scroll::-webkit-scrollbar-thumb {
+        background-color: var(--primary);
+        border-radius: 5px;
+        cursor: grab;
+      }
+      
+      .uas-builder-scroll::-webkit-scrollbar-track {
+        background: var(--main);
+      }
+      
+      /* Force dark theme for any Bootstrap or other light elements */
+      .container, .container-full {
+        background: transparent !important;
+      }
+      
+      /* Ensure all text elements use dark theme colors */
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body class="counter-scroll">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Qore Design System Scripts -->
+    <script src="/asset/js/bootstrap.min.js"></script>
+    <script src="/asset/js/jquery.min.js"></script>
+    <script src="/asset/js/lazysize.min.js"></script>
+    <script src="/asset/js/infinityslide.js"></script>
+    <script src="/asset/js/gsap.min.js"></script>
+    <script src="/asset/js/wow.min.js"></script>
+    <script src="/asset/js/ScrollTrigger.min.js"></script>
+    <script src="/asset/js/ScrollSmooth.js"></script>
+    <script src="/asset/js/odometer.min.js"></script>
+    <script src="/asset/js/main.js"></script>
+  </body>
+</html> 
